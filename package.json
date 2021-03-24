@@ -8,7 +8,9 @@
     "dev:snowpack": "snowpack dev",
     "e2e": "cypress run",
     "e2e:open": "cypress open",
-    "lint": "eslint .",
+    "lint:js": "eslint .",
+    "lint:ts": "tsc -p tsconfig.json",
+    "lint": "npm-run-all -lp lint:**",
     "test": "TODO",
     "start": "npm-run-all -lp dev:**"
   },

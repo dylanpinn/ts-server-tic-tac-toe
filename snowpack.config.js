@@ -1,3 +1,4 @@
+/* eslint-env node */
 // Snowpack Configuration File
 // See all supported options: https://www.snowpack.dev/reference/configuration
 
