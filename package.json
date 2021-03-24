@@ -5,11 +5,12 @@
   "main": "TODO",
   "scripts": {
     "dev:tsc": "tsc -w -p tsconfig.json",
+    "dev:snowpack": "snowpack dev",
     "e2e": "cypress run",
     "e2e:open": "cypress open",
     "lint": "eslint .",
     "test": "TODO",
-    "start": "snowpack dev"
+    "start": "npm-run-all -lp dev:**"
   },
   "repository": {
     "type": "git",
