@@ -4,6 +4,8 @@
   "description": "Tic Tac Toe written in TypeScript using client/server architecture.",
   "main": "TODO",
   "scripts": {
+    "e2e": "cypress run",
+    "e2e:open": "cypress open",
     "test": "TODO"
   },
   "repository": {
