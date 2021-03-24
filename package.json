@@ -1,0 +1,19 @@
+{
+  "name": "ts-server-tic-tac-toe",
+  "version": "0.0.1",
+  "description": "Tic Tac Toe written in TypeScript using client/server architecture.",
+  "main": "TODO",
+  "scripts": {
+    "test": "TODO"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylanpinn/ts-server-tic-tac-toe.git"
+  },
+  "author": "Dylan Pinn <me@dylanpin.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dylanpinn/ts-server-tic-tac-toe/issues"
+  },
+  "homepage": "https://github.com/dylanpinn/ts-server-tic-tac-toe#readme"
+}
