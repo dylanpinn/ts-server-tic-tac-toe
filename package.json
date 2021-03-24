@@ -4,6 +4,7 @@
   "description": "Tic Tac Toe written in TypeScript using client/server architecture.",
   "main": "TODO",
   "scripts": {
+    "dev:tsc": "tsc -w -p tsconfig.json",
     "e2e": "cypress run",
     "e2e:open": "cypress open",
     "lint": "eslint .",
@@ -25,6 +26,8 @@
   },
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.1",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
     "@typescript-eslint/eslint-plugin": "^4.19.0",
     "@typescript-eslint/parser": "^4.19.0",
     "cypress": "^6.8.0",
