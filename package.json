@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/dylanpinn/ts-server-tic-tac-toe/issues"
   },
-  "homepage": "https://github.com/dylanpinn/ts-server-tic-tac-toe#readme"
+  "homepage": "https://github.com/dylanpinn/ts-server-tic-tac-toe#readme",
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0",
+    "simple-git-hooks": "^2.2.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx pretty-quick --staged"
+  }
 }
