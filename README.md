@@ -1,3 +1,3 @@
-# ts-server-tic-tac-toe
+# typescript-react-cypress-example
 
-Tic Tac Toe written in TypeScript using client/server architecture.
+A simple example React app written in TypeScript using Cypress.
