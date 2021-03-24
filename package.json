@@ -8,7 +8,8 @@
     "e2e": "cypress run",
     "e2e:open": "cypress open",
     "lint": "eslint .",
-    "test": "TODO"
+    "test": "TODO",
+    "start": "snowpack dev"
   },
   "repository": {
     "type": "git",
