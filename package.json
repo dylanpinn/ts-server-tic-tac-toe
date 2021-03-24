@@ -5,9 +5,8 @@
   "main": "TODO",
   "scripts": {
     "test": "is-ci \"test:coverage\" \"test:watch\"",
-    "test:coverage": "npm run test:unit --coverage",
-    "test:watch": "npm run test:unit --watch",
-    "test:unit": "jest src",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
     "dev:tsc": "tsc -w -p tsconfig.json",
     "dev:snowpack": "snowpack dev",
     "dev": "npm-run-all -lp dev:**",
