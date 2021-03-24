@@ -6,13 +6,19 @@
   "scripts": {
     "dev:tsc": "tsc -w -p tsconfig.json",
     "dev:snowpack": "snowpack dev",
-    "e2e": "cypress run",
-    "e2e:open": "cypress open",
+    "dev": "npm-run-all -lp dev:**",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
+    "test:e2e": "is-ci test:e2e:run test:e2e:dev",
+    "pretest:e2e:run": "npm run build",
+    "test:e2e:run": "start-server-and-test start http://localhost:8080 cy:run",
+    "test:e2e:dev": "start-server-and-test dev http://localhost:8080 cy:open",
     "lint:js": "eslint .",
     "lint:ts": "tsc -p tsconfig.json",
-    "lint": "npm-run-all -lp lint:**",
-    "test": "TODO",
-    "start": "npm-run-all -lp dev:**"
+    "lint": "npm-run-all -lp lint:*",
+    "start:client": "serve --no-clipboard --single --listen 8080 dist",
+    "start": "npm-run-all -lp start:*",
+    "build": "snowpack build"
   },
   "repository": {
     "type": "git",
@@ -29,6 +35,7 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@testing-library/cypress": "^7.0.4",
     "@tsconfig/recommended": "^1.0.1",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
@@ -37,11 +44,15 @@
     "cypress": "^6.8.0",
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-cypress": "^2.11.2",
+    "is-ci-cli": "^2.2.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.2.1",
     "pretty-quick": "^3.1.0",
+    "serve": "^11.3.2",
     "simple-git-hooks": "^2.2.0",
     "snowpack": "^3.1.2",
+    "start-server-and-test": "^1.12.1",
     "typescript": "^4.2.3"
   },
   "simple-git-hooks": {
