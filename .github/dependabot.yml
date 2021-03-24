@@ -5,8 +5,16 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    assignees:
+      - "dylanpinn"
+    reviewers:
+      - "dylanpinn"
 
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
+    assignees:
+      - "dylanpinn"
+    reviewers:
+      - "dylanpinn"
