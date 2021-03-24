@@ -6,4 +6,11 @@ plugins:
 extends:
   - eslint:recommended
   - plugin:@typescript-eslint/recommended
+  - plugin:jest/recommended
+  - plugin:jest/style
   - prettier
+overrides:
+  - files:
+      - cypress/**/*.ts
+    rules:
+      jest/expect-expect: off

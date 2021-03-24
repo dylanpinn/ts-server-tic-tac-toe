@@ -1,5 +1,5 @@
 import * as React from "react";
 
 export default function App(): JSX.Element {
-  return <p>Hi</p>;
+  return <h1 role="heading">Hi</h1>;
 }
