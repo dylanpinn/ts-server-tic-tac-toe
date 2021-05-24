@@ -62,7 +62,7 @@
     "pretty-quick": "^3.1.0",
     "serve": "^11.3.2",
     "simple-git-hooks": "^2.4.1",
-    "snowpack": "^3.5.0",
+    "snowpack": "^3.5.1",
     "start-server-and-test": "^1.12.1",
     "ts-jest": "^26.5.6",
     "typescript": "^4.2.4"
