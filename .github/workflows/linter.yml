@@ -15,6 +15,10 @@ jobs:
         with:
           fetch-depth: 0
 
+      - uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+
       - name: Lint Code Base
         uses: github/super-linter@v4.9.2
         env:
