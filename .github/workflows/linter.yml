@@ -20,7 +20,7 @@ jobs:
           node-version: lts/*
 
       - name: Lint Code Base
-        uses: github/super-linter@v4.9.4
+        uses: github/super-linter@v4.9.5
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
