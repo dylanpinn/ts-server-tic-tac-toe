@@ -4,7 +4,6 @@ on:
   push:
     branches: [master]
   pull_request:
-    branches-ignore: []
 jobs:
   build:
     name: Lint Code Base
